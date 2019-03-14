@@ -1,4 +1,3 @@
-// Jsonnet Example
 {
     person1: {
         name: "Alice",

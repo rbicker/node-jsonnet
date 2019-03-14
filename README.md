@@ -1,14 +1,14 @@
 node-jsonnet
-=====================
+=============
+* This module is Node.js wrapper for Jsonnet.
+* Learn more about Jsonnet here: [https://jsonnet.org/](https://jsonnet.org/)
 
-[![Build Status](https://travis-ci.org/yosuke-furukawa/node-jsonnet.svg?branch=master)](https://travis-ci.org/yosuke-furukawa/node-jsonnet)
+# Changes from original repository
+* Updated Jsonnet Library (Build date: 2019-03-14)
+* Updated dependencies
+* Moved all dependencies to devDependencies where they belong
 
-[jsonnet](http://google.github.io/jsonnet/doc/index.html) is a DSL for JSON. Jsonnet is created by Google.
-
-This module is a Jsonnet wrapper for Node.js
-
-Jsonnet demo
----------------------
+# Jsonnet example
 
 before:
 
@@ -38,28 +38,24 @@ after:
 }
 ```
 
-If you would like to know more Jsonnet syntax, read here.
 
-[http://google.github.io/jsonnet/doc/spec.html](http://google.github.io/jsonnet/doc/spec.html)
 
-How to use
---------------------
+# Usage
 
 ```shell
-$ npm install jsonnet --save
+$ npm install @rbicker/jsonnet --save
 ```
 
 ```javascript
 
-var Jsonnet = require('jsonnet');
-// instance jsonnet
-var jsonnet = new Jsonnet();
-var fs = require('fs');
+const Jsonnet = require('@rbicker/jsonnet');
+const fs = require('fs');
 
-var code = fs.readFileSync("./menu.jsonnet");
+const code = fs.readFileSync("./menu.jsonnet");
 
+const jsonnet = new Jsonnet();
 // eval jsonnet to javascript object
-var result = jsonnet.eval(code);
+const result = jsonnet.eval(code);
 
 console.log(result);
 ```
