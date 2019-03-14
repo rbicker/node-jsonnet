@@ -1,6 +1,6 @@
 node-jsonnet
 =============
-* This module is Node.js wrapper for Jsonnet.
+* This module is a Node.js wrapper for Jsonnet.
 * Learn more about Jsonnet here: [https://jsonnet.org/](https://jsonnet.org/)
 
 # Changes from original repository
