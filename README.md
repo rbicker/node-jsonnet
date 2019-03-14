@@ -12,7 +12,7 @@ node-jsonnet
 
 before:
 
-```json
+```jsonnet
 // Jsonnet Example
 {
     person1: {
