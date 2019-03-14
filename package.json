@@ -1,6 +1,6 @@
 {
-  "name": "jsonnet",
-  "version": "0.5.0-beta",
+  "name": "@rbicker/jsonnet",
+  "version": "1.0.0",
   "description": "Node.js wrapper for Jsonnet",
   "main": "index.js",
   "scripts": {
