@@ -4,7 +4,7 @@ node-jsonnet
 * Learn more about Jsonnet here: [https://jsonnet.org/](https://jsonnet.org/)
 
 # Changes from original repository
-* Updated Jsonnet Library (Build date: 2019-03-14)
+* Updated Jsonnet Library (Build date: 2019-03-15)
 * Updated dependencies
 * Moved all dependencies to devDependencies where they belong
 
@@ -54,7 +54,7 @@ const fs = require('fs');
 const code = fs.readFileSync("./menu.jsonnet");
 
 const jsonnet = new Jsonnet();
-// eval jsonnet to javascript object
+// eval jsonnet to json
 const result = jsonnet.eval(code);
 
 console.log(result);
